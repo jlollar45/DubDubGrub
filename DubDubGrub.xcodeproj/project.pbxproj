@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB152E762836007C007DF353 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB152E752836007C007DF353 /* Color+Ext.swift */; };
+		CB152E78283600D6007DF353 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB152E77283600D6007DF353 /* AppTabView.swift */; };
+		CB152E7A2836011E007DF353 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB152E792836011E007DF353 /* LocationMapView.swift */; };
+		CB152E7C28360144007DF353 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB152E7B28360144007DF353 /* LocationListView.swift */; };
+		CB152E7E2836014B007DF353 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB152E7D2836014B007DF353 /* ProfileView.swift */; };
 		CB58B3C92835FCE60092CE2C /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58B3C82835FCE60092CE2C /* DubDubGrubApp.swift */; };
-		CB58B3CB2835FCE60092CE2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58B3CA2835FCE60092CE2C /* ContentView.swift */; };
 		CB58B3CD2835FCE80092CE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB58B3CC2835FCE80092CE2C /* Assets.xcassets */; };
 		CB58B3D02835FCE80092CE2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB58B3CF2835FCE80092CE2C /* Preview Assets.xcassets */; };
+		CB58B3D92835FD560092CE2C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB58B3D82835FD560092CE2C /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB152E752836007C007DF353 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		CB152E77283600D6007DF353 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		CB152E792836011E007DF353 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		CB152E7B28360144007DF353 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		CB152E7D2836014B007DF353 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CB58B3C52835FCE60092CE2C /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB58B3C82835FCE60092CE2C /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
-		CB58B3CA2835FCE60092CE2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB58B3CC2835FCE80092CE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB58B3CF2835FCE80092CE2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB58B3D62835FD4B0092CE2C /* DubDubGrub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DubDubGrub.entitlements; sourceTree = "<group>"; };
+		CB58B3D82835FD560092CE2C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB58B3D92835FD560092CE2C /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +49,7 @@
 			children = (
 				CB58B3C72835FCE60092CE2C /* DubDubGrub */,
 				CB58B3C62835FCE60092CE2C /* Products */,
+				CB58B3D72835FD560092CE2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +64,15 @@
 		CB58B3C72835FCE60092CE2C /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				CB58B3D62835FD4B0092CE2C /* DubDubGrub.entitlements */,
 				CB58B3C82835FCE60092CE2C /* DubDubGrubApp.swift */,
-				CB58B3CA2835FCE60092CE2C /* ContentView.swift */,
 				CB58B3CC2835FCE80092CE2C /* Assets.xcassets */,
 				CB58B3CE2835FCE80092CE2C /* Preview Content */,
+				CB152E752836007C007DF353 /* Color+Ext.swift */,
+				CB152E77283600D6007DF353 /* AppTabView.swift */,
+				CB152E792836011E007DF353 /* LocationMapView.swift */,
+				CB152E7B28360144007DF353 /* LocationListView.swift */,
+				CB152E7D2836014B007DF353 /* ProfileView.swift */,
 			);
 			path = DubDubGrub;
 			sourceTree = "<group>";
@@ -65,6 +83,14 @@
 				CB58B3CF2835FCE80092CE2C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB58B3D72835FD560092CE2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB58B3D82835FD560092CE2C /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB58B3CB2835FCE60092CE2C /* ContentView.swift in Sources */,
 				CB58B3C92835FCE60092CE2C /* DubDubGrubApp.swift in Sources */,
+				CB152E7A2836011E007DF353 /* LocationMapView.swift in Sources */,
+				CB152E7C28360144007DF353 /* LocationListView.swift in Sources */,
+				CB152E78283600D6007DF353 /* AppTabView.swift in Sources */,
+				CB152E7E2836014B007DF353 /* ProfileView.swift in Sources */,
+				CB152E762836007C007DF353 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DubDubGrub/DubDubGrub.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DubDubGrub/Preview Content\"";
@@ -293,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DubDubGrub/DubDubGrub.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DubDubGrub/Preview Content\"";
