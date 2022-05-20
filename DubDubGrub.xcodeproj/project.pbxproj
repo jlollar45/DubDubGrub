@@ -13,6 +13,11 @@
 		CB152E7C28360144007DF353 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB152E7B28360144007DF353 /* LocationListView.swift */; };
 		CB152E7E2836014B007DF353 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB152E7D2836014B007DF353 /* ProfileView.swift */; };
 		CB5539B9283701BB00449B40 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5539B8283701BB00449B40 /* LocationDetailView.swift */; };
+		CB5539BB2837355500449B40 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5539BA2837355400449B40 /* LocationCell.swift */; };
+		CB5539BD2837357500449B40 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5539BC2837357500449B40 /* AvatarView.swift */; };
+		CB5539BF283737C100449B40 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5539BE283737C100449B40 /* CustomModifiers.swift */; };
+		CB5539C12837381900449B40 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5539C02837381900449B40 /* View+Ext.swift */; };
+		CB5539C3283738D300449B40 /* DDGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5539C2283738D300449B40 /* DDGButton.swift */; };
 		CB58B3C92835FCE60092CE2C /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58B3C82835FCE60092CE2C /* DubDubGrubApp.swift */; };
 		CB58B3CD2835FCE80092CE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB58B3CC2835FCE80092CE2C /* Assets.xcassets */; };
 		CB58B3D02835FCE80092CE2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB58B3CF2835FCE80092CE2C /* Preview Assets.xcassets */; };
@@ -26,6 +31,11 @@
 		CB152E7B28360144007DF353 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		CB152E7D2836014B007DF353 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CB5539B8283701BB00449B40 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		CB5539BA2837355400449B40 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		CB5539BC2837357500449B40 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		CB5539BE283737C100449B40 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		CB5539C02837381900449B40 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		CB5539C2283738D300449B40 /* DDGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGButton.swift; sourceTree = "<group>"; };
 		CB58B3C52835FCE60092CE2C /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB58B3C82835FCE60092CE2C /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		CB58B3CC2835FCE80092CE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +56,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB5539C428373A1A00449B40 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB152E752836007C007DF353 /* Color+Ext.swift */,
+				CB5539C02837381900449B40 /* View+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB5539C528373A3000449B40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB5539C828373A7A00449B40 /* CustomViews */,
+				CB5539C728373A6600449B40 /* Cells */,
+				CB5539C628373A3A00449B40 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB5539C628373A3A00449B40 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CB152E77283600D6007DF353 /* AppTabView.swift */,
+				CB152E792836011E007DF353 /* LocationMapView.swift */,
+				CB152E7B28360144007DF353 /* LocationListView.swift */,
+				CB5539B8283701BB00449B40 /* LocationDetailView.swift */,
+				CB152E7D2836014B007DF353 /* ProfileView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CB5539C728373A6600449B40 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB5539BA2837355400449B40 /* LocationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CB5539C828373A7A00449B40 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CB5539BC2837357500449B40 /* AvatarView.swift */,
+				CB5539C2283738D300449B40 /* DDGButton.swift */,
+				CB5539BE283737C100449B40 /* CustomModifiers.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		CB58B3BC2835FCE60092CE2C = {
 			isa = PBXGroup;
 			children = (
@@ -66,16 +125,12 @@
 		CB58B3C72835FCE60092CE2C /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				CB5539C428373A1A00449B40 /* Extensions */,
+				CB5539C528373A3000449B40 /* Views */,
 				CB58B3D62835FD4B0092CE2C /* DubDubGrub.entitlements */,
 				CB58B3C82835FCE60092CE2C /* DubDubGrubApp.swift */,
 				CB58B3CC2835FCE80092CE2C /* Assets.xcassets */,
 				CB58B3CE2835FCE80092CE2C /* Preview Content */,
-				CB152E752836007C007DF353 /* Color+Ext.swift */,
-				CB152E77283600D6007DF353 /* AppTabView.swift */,
-				CB152E792836011E007DF353 /* LocationMapView.swift */,
-				CB152E7B28360144007DF353 /* LocationListView.swift */,
-				CB152E7D2836014B007DF353 /* ProfileView.swift */,
-				CB5539B8283701BB00449B40 /* LocationDetailView.swift */,
 			);
 			path = DubDubGrub;
 			sourceTree = "<group>";
@@ -167,11 +222,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB58B3C92835FCE60092CE2C /* DubDubGrubApp.swift in Sources */,
+				CB5539BF283737C100449B40 /* CustomModifiers.swift in Sources */,
 				CB152E7A2836011E007DF353 /* LocationMapView.swift in Sources */,
 				CB152E7C28360144007DF353 /* LocationListView.swift in Sources */,
 				CB5539B9283701BB00449B40 /* LocationDetailView.swift in Sources */,
 				CB152E78283600D6007DF353 /* AppTabView.swift in Sources */,
 				CB152E7E2836014B007DF353 /* ProfileView.swift in Sources */,
+				CB5539C12837381900449B40 /* View+Ext.swift in Sources */,
+				CB5539BB2837355500449B40 /* LocationCell.swift in Sources */,
+				CB5539C3283738D300449B40 /* DDGButton.swift in Sources */,
+				CB5539BD2837357500449B40 /* AvatarView.swift in Sources */,
 				CB152E762836007C007DF353 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
