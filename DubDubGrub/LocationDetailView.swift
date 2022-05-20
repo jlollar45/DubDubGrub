@@ -14,59 +14,60 @@ struct LocationDetailView: View {
                    GridItem(.flexible())]
     
     var body: some View {
-        NavigationView {
-            VStack (spacing: 16) {
-                Image("default-banner-asset")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 120)
-                
-                HStack {
-                    Label("123 Main Street", systemImage: "mappin.and.ellipse")
-                    Spacer()
-                }
+        VStack (spacing: 16) {
+            Image("default-banner-asset")
+                .resizable()
+                .scaledToFill()
+                .frame(height: 120)
+            
+            HStack {
+                Label("123 Main Street", systemImage: "mappin.and.ellipse")
+                Spacer()
+            }
+            .padding(.horizontal)
+            
+            Text("This is a test description. This is a test description. This is a test description. This is a test description. This is a test description.")
+                .lineLimit(3)
+                .minimumScaleFactor(0.75)
+                .frame(height: 70)
                 .padding(.horizontal)
+            
+            ZStack {
+                Capsule()
+                    .frame(height: 80)
+                    .foregroundColor(Color(.secondarySystemBackground))
                 
-                Text("This is a test description. This is a test description. This is a test description. This is a test description. This is a test description.")
-                    .lineLimit(3)
-                    .minimumScaleFactor(0.75)
-                    .padding(.horizontal)
-                
-                ZStack {
-                    Capsule()
-                        .frame(height: 80)
-                        .foregroundColor(Color(.secondarySystemBackground))
+                HStack (spacing: 20){
+                    Button {
+                        
+                    } label: {
+                        LocationActionButton(color: .brandPrimary, imageName: "location.fill")
+                    }
                     
-                    HStack (spacing: 20){
-                        Button {
-                            
-                        } label: {
-                            LocationActionButton(color: .brandPrimary, imageName: "location.fill")
-                        }
+                    Link(destination: URL(string: "https://www.apple.com")!) {
+                        LocationActionButton(color: .brandPrimary, imageName: "network")
+                    }
+                    
+                    Button {
                         
-                        Link(destination: URL(string: "https://www.apple.com")!) {
-                            LocationActionButton(color: .brandPrimary, imageName: "network")
-                        }
+                    } label: {
+                        LocationActionButton(color: .brandPrimary, imageName: "phone.fill")
+                    }
+                    
+                    Button {
                         
-                        Button {
-                            
-                        } label: {
-                            LocationActionButton(color: .brandPrimary, imageName: "phone.fill")
-                        }
-                        
-                        Button {
-                            
-                        } label: {
-                            LocationActionButton(color: .brandPrimary, imageName: "person.fill.checkmark")
-                        }
+                    } label: {
+                        LocationActionButton(color: .brandPrimary, imageName: "person.fill.checkmark")
                     }
                 }
-                .padding(.horizontal)
-                
-                Text("Who's Here?")
-                    .bold()
-                    .font(.title2)
-                
+            }
+            .padding(.horizontal)
+            
+            Text("Who's Here?")
+                .bold()
+                .font(.title2)
+            
+            ScrollView {
                 LazyVGrid(columns: columns, content: {
                     FirstNameAvatarView(firstName: "John")
                     FirstNameAvatarView(firstName: "John")
@@ -76,18 +77,18 @@ struct LocationDetailView: View {
                     FirstNameAvatarView(firstName: "John")
                     FirstNameAvatarView(firstName: "John")
                 })
-                
-                Spacer()
             }
-            .navigationTitle("Location Name")
-            .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationTitle("Location Name")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct LocationDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationDetailView()
+        NavigationView {
+            LocationDetailView()
+        }
     }
 }
 
