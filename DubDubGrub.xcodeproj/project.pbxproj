@@ -23,6 +23,7 @@
 		CB58B3CD2835FCE80092CE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB58B3CC2835FCE80092CE2C /* Assets.xcassets */; };
 		CB58B3D02835FCE80092CE2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB58B3CF2835FCE80092CE2C /* Preview Assets.xcassets */; };
 		CB58B3D92835FD560092CE2C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB58B3D82835FD560092CE2C /* CloudKit.framework */; };
+		CB666E9028398FFB00439C3D /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB666E8F28398FFB00439C3D /* DDGProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CB58B3CF2835FCE80092CE2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB58B3D62835FD4B0092CE2C /* DubDubGrub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DubDubGrub.entitlements; sourceTree = "<group>"; };
 		CB58B3D82835FD560092CE2C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		CB666E8F28398FFB00439C3D /* DDGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				CB445BFC28388F1900C442F4 /* DDGLocation.swift */,
+				CB666E8F28398FFB00439C3D /* DDGProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				CB152E7A2836011E007DF353 /* LocationMapView.swift in Sources */,
 				CB152E7C28360144007DF353 /* LocationListView.swift in Sources */,
 				CB5539B9283701BB00449B40 /* LocationDetailView.swift in Sources */,
+				CB666E9028398FFB00439C3D /* DDGProfile.swift in Sources */,
 				CB445BFD28388F1900C442F4 /* DDGLocation.swift in Sources */,
 				CB152E78283600D6007DF353 /* AppTabView.swift in Sources */,
 				CB152E7E2836014B007DF353 /* ProfileView.swift in Sources */,
