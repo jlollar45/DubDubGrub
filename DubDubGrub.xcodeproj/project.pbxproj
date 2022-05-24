@@ -62,6 +62,7 @@
 		CB58B3D82835FD560092CE2C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		CB666E8F28398FFB00439C3D /* DDGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
 		CBEFE1B2283C96C6005AFBAC /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
+		CBEFE1B4283CA0CC005AFBAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +187,7 @@
 		CB58B3C72835FCE60092CE2C /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				CBEFE1B4283CA0CC005AFBAC /* Info.plist */,
 				CB4F7547283AD87500581BBD /* Utilities */,
 				CB445BFB28388EFD00C442F4 /* Models */,
 				CB5539C528373A3000449B40 /* Views */,
@@ -437,6 +439,8 @@
 				DEVELOPMENT_TEAM = Y58Z2JJ8PD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DubDubGrub/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Dub Dub Grub uses your location to show you where you are in relation to your friends and food.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,6 +471,8 @@
 				DEVELOPMENT_TEAM = Y58Z2JJ8PD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DubDubGrub/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Dub Dub Grub uses your location to show you where you are in relation to your friends and food.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
