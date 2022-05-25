@@ -31,6 +31,9 @@
 		CB58B3D02835FCE80092CE2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB58B3CF2835FCE80092CE2C /* Preview Assets.xcassets */; };
 		CB58B3D92835FD560092CE2C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB58B3D82835FD560092CE2C /* CloudKit.framework */; };
 		CB666E9028398FFB00439C3D /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB666E8F28398FFB00439C3D /* DDGProfile.swift */; };
+		CB7CB833283DB84A00C5D4FD /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CB832283DB84A00C5D4FD /* OnboardView.swift */; };
+		CB7CB835283DB89F00C5D4FD /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CB834283DB89F00C5D4FD /* LogoView.swift */; };
+		CB7CB838283DBC2900C5D4FD /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CB837283DBC2900C5D4FD /* XDismissButton.swift */; };
 		CBEFE1B3283C96C6005AFBAC /* CKAsset+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFE1B2283C96C6005AFBAC /* CKAsset+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		CB58B3D62835FD4B0092CE2C /* DubDubGrub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DubDubGrub.entitlements; sourceTree = "<group>"; };
 		CB58B3D82835FD560092CE2C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		CB666E8F28398FFB00439C3D /* DDGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
+		CB7CB832283DB84A00C5D4FD /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		CB7CB834283DB89F00C5D4FD /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		CB7CB837283DBC2900C5D4FD /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		CBEFE1B2283C96C6005AFBAC /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
 		CBEFE1B4283CA0CC005AFBAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +142,7 @@
 				CB152E7B28360144007DF353 /* LocationListView.swift */,
 				CB5539B8283701BB00449B40 /* LocationDetailView.swift */,
 				CB152E7D2836014B007DF353 /* ProfileView.swift */,
+				CB7CB832283DB84A00C5D4FD /* OnboardView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -151,9 +158,10 @@
 		CB5539C828373A7A00449B40 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				CB7CB836283DBC1D00C5D4FD /* Buttons */,
 				CB5539BC2837357500449B40 /* AvatarView.swift */,
-				CB5539C2283738D300449B40 /* DDGButton.swift */,
 				CB5539BE283737C100449B40 /* CustomModifiers.swift */,
+				CB7CB834283DB89F00C5D4FD /* LogoView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -213,6 +221,15 @@
 				CB58B3D82835FD560092CE2C /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB7CB836283DBC1D00C5D4FD /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				CB5539C2283738D300449B40 /* DDGButton.swift */,
+				CB7CB837283DBC2900C5D4FD /* XDismissButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,12 +315,15 @@
 				CB152E78283600D6007DF353 /* AppTabView.swift in Sources */,
 				CB152E7E2836014B007DF353 /* ProfileView.swift in Sources */,
 				CB4F7549283AD8AB00581BBD /* CloudKitManager.swift in Sources */,
+				CB7CB835283DB89F00C5D4FD /* LogoView.swift in Sources */,
+				CB7CB838283DBC2900C5D4FD /* XDismissButton.swift in Sources */,
 				CB4F754F283AEC5E00581BBD /* AlertItem.swift in Sources */,
 				CB5539C12837381900449B40 /* View+Ext.swift in Sources */,
 				CB5539BB2837355500449B40 /* LocationCell.swift in Sources */,
 				CB4F754D283ADC9E00581BBD /* CKRecord+Ext.swift in Sources */,
 				CB57AAAA283C6D2000D8D2B2 /* LocationManager.swift in Sources */,
 				CBEFE1B3283C96C6005AFBAC /* CKAsset+Ext.swift in Sources */,
+				CB7CB833283DB84A00C5D4FD /* OnboardView.swift in Sources */,
 				CB5539C3283738D300449B40 /* DDGButton.swift in Sources */,
 				CB5539BD2837357500449B40 /* AvatarView.swift in Sources */,
 				CB152E762836007C007DF353 /* Color+Ext.swift in Sources */,
