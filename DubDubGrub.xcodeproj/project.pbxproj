@@ -26,6 +26,7 @@
 		CB5539C12837381900449B40 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5539C02837381900449B40 /* View+Ext.swift */; };
 		CB5539C3283738D300449B40 /* DDGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5539C2283738D300449B40 /* DDGButton.swift */; };
 		CB5547BA28447B4700B53CB2 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5547B928447B4700B53CB2 /* PhotoPicker.swift */; };
+		CB5547BC2844851A00B53CB2 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5547BB2844851A00B53CB2 /* UIImage+Ext.swift */; };
 		CB57AAAA283C6D2000D8D2B2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57AAA9283C6D2000D8D2B2 /* LocationManager.swift */; };
 		CB58B3C92835FCE60092CE2C /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58B3C82835FCE60092CE2C /* DubDubGrubApp.swift */; };
 		CB58B3CD2835FCE80092CE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB58B3CC2835FCE80092CE2C /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		CB5539C02837381900449B40 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		CB5539C2283738D300449B40 /* DDGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGButton.swift; sourceTree = "<group>"; };
 		CB5547B928447B4700B53CB2 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		CB5547BB2844851A00B53CB2 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		CB57AAA9283C6D2000D8D2B2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		CB58B3C52835FCE60092CE2C /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB58B3C82835FCE60092CE2C /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				CB5539C02837381900449B40 /* View+Ext.swift */,
 				CB4F754C283ADC9E00581BBD /* CKRecord+Ext.swift */,
 				CBEFE1B2283C96C6005AFBAC /* CKAsset+Ext.swift */,
+				CB5547BB2844851A00B53CB2 /* UIImage+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				CBEFE1B3283C96C6005AFBAC /* CKAsset+Ext.swift in Sources */,
 				CB7CB833283DB84A00C5D4FD /* OnboardView.swift in Sources */,
 				CB5539C3283738D300449B40 /* DDGButton.swift in Sources */,
+				CB5547BC2844851A00B53CB2 /* UIImage+Ext.swift in Sources */,
 				CB5539BD2837357500449B40 /* AvatarView.swift in Sources */,
 				CB152E762836007C007DF353 /* Color+Ext.swift in Sources */,
 			);
