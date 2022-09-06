@@ -36,6 +36,7 @@
 		CB7CB833283DB84A00C5D4FD /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CB832283DB84A00C5D4FD /* OnboardView.swift */; };
 		CB7CB835283DB89F00C5D4FD /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CB834283DB89F00C5D4FD /* LogoView.swift */; };
 		CB7CB838283DBC2900C5D4FD /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CB837283DBC2900C5D4FD /* XDismissButton.swift */; };
+		CB824F5528C6FB2B00726BD3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB824F5428C6FB2B00726BD3 /* ProfileViewModel.swift */; };
 		CBEFE1B3283C96C6005AFBAC /* CKAsset+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFE1B2283C96C6005AFBAC /* CKAsset+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		CB7CB832283DB84A00C5D4FD /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		CB7CB834283DB89F00C5D4FD /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		CB7CB837283DBC2900C5D4FD /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		CB824F5428C6FB2B00726BD3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		CBEFE1B2283C96C6005AFBAC /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
 		CBEFE1B4283CA0CC005AFBAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,11 +144,11 @@
 		CB5539C628373A3A00449B40 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CB824F5328C6FB1100726BD3 /* ProfileView */,
 				CB4F7550283AF38A00581BBD /* LocationMapView */,
 				CB152E77283600D6007DF353 /* AppTabView.swift */,
 				CB152E7B28360144007DF353 /* LocationListView.swift */,
 				CB5539B8283701BB00449B40 /* LocationDetailView.swift */,
-				CB152E7D2836014B007DF353 /* ProfileView.swift */,
 				CB7CB832283DB84A00C5D4FD /* OnboardView.swift */,
 			);
 			path = Screens;
@@ -246,6 +248,15 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		CB824F5328C6FB1100726BD3 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				CB152E7D2836014B007DF353 /* ProfileView.swift */,
+				CB824F5428C6FB2B00726BD3 /* ProfileViewModel.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,6 +333,7 @@
 				CB152E7A2836011E007DF353 /* LocationMapView.swift in Sources */,
 				CB4F7552283AF39B00581BBD /* LocationMapViewModel.swift in Sources */,
 				CB152E7C28360144007DF353 /* LocationListView.swift in Sources */,
+				CB824F5528C6FB2B00726BD3 /* ProfileViewModel.swift in Sources */,
 				CB4F7546283AD41700581BBD /* MockData.swift in Sources */,
 				CB5539B9283701BB00449B40 /* LocationDetailView.swift in Sources */,
 				CB666E9028398FFB00439C3D /* DDGProfile.swift in Sources */,
